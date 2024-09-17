@@ -15,13 +15,13 @@ En Javascript hay 3 funciones
 2- Se llama o se invoca la funcion*/
 
 /* Funcion regular - definicion*/
-function unaFuncion(){
+/* function unaFuncion(){
     console.log(25*25);
     console.log(25-25);
     console.log(25+25);
     console.log(25/25);
 }
-/* Funcion regular - Llamado*/
+ Funcion regular - Llamado
 unaFuncion()
 
 let nombre = prompt("Caray");
@@ -93,5 +93,90 @@ function todas(){
     console.log(numeroUno-numeroDos);
     console.log(numeroUno*numeroDos);
     console.log(numeroUno/numeroDos);
+
+
+Estructura de datos:
+
+1. Arreglos (Vectores)
+- Simulacion de datos (almacenamiento)
+- Tamao o longitud = Dado por la cantidad dentro de su posicion
+- Posicion = Esta dado por la ecuacion n-1, donde n es el elemento
+  Los arreglos estan asociados al ciclo for
+    --> Recorrido de un arreglo: interacion dentro del arreglo por cada elemento: buscar contenido y realizar alguna operacion matematica booleana
+    --> Llenanado de un arreglo: interacion dentro  del arreglo por cada elemento: agregar contenido a una posicion del arreglo
+    metodos de los arreglos:
+    - push(), pop(), shift(), unshift(),
+    push: metodo que agrega un elemento a la ultima posicion
+    pop: metodo que elimina la ultima posicion
+    shift: metodo que elimina la primer posicion
+    unshift: metodo que agrega un elemento a la primer posicion
+    splice(): Metodo para eliminar un elemento seleccionado
+    map(), find(), forEach(), Filter(), some(), join(), split()
+2. Objetos
+- Agrupacion de informacion de un mismo elemento
+} */
+
+alert("Bienvenido a la pagina de practicas");
+
+/* function unaFuncion(){
+    let n = 5+5;
 }
 
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let index = 0; index < 9; index++) {
+    if(numeros[index] % 2 == 0){
+        console.log("El numero: " + index + " Es un numero impar");
+    }
+}
+
+let estudiantes =["Lina", "Paola", "Carol", "Emmanuel", "David", "Mateo"];
+for (let index = 0; index < 2; index++){
+    let estudiante = prompt("El nombre del estudiante es: ");
+    if(estudiante == estudiantes[index]){
+        console.log("El estudiante " + estudiante + " existe en la base de datos");
+    } else{
+        console.log("No existe dicho estudiante");
+    }
+} */
+
+/* let personas = ["Camila", "Luisa", "Felipe", "Ana", "Tomas", "Andrea"];
+let edades = [17, 27, 35, 15, 23, 18];
+for (let index = 0; index < 6; index++){
+    if (edades[index] > 10){
+        console.log("La persona " + personas[index] + " tiene " + edades[index] + " años");
+    }
+} */
+
+/* let personas = [];
+let edades = [];
+for (let index = 0; index < 5; index++){
+    let persona = prompt("Ingresa el nombre de la persona: ");    
+    let edad = prompt("Ingresa la edad de la persona: ");
+    personas[index] = persona
+    edades[index] = edad    
+}
+
+for (let index = 0; index < 5; index++){
+    if (edades[index] >= 15){
+        console.log("La persona " + personas[index] + " tiene " + edades[index] + " años");
+        }
+} */
+
+let nombres = [];
+nombres.push("Jaime");
+nombres.push("Luisa");
+nombres.push("Camila");
+
+console.log(nombres);
+
+nombres.unshift("Camilo");
+nombres.unshift("Karen");
+console.log(nombres);
+nombres.pop()
+console.log(nombres);
+
+let numeros = [1,2,3,4,5,6,7,8,9];
+numeros.splice(0,2);
+console.log(numeros);
+numeros.splice(3,1);
+console.log(numeros);
