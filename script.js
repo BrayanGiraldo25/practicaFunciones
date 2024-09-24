@@ -111,7 +111,12 @@ Estructura de datos:
     shift: metodo que elimina la primer posicion
     unshift: metodo que agrega un elemento a la primer posicion
     splice(): Metodo para eliminar un elemento seleccionado
-    map(), find(), forEach(), Filter(), some(), join(), split()
+    map(): Metodo que recorre un arreglo, aplica una condicion y reotrna un nuevo arreglo con la nueva informacion
+    find(): Metodo que recorre un arreglo, aplica una condicion y retorna un elemnto. El metodo filter no es mutable, significa que no cambia el valor original del arreglo
+    forEach(): 
+    Filter(): Metodo que recorre un arreglo aplica una condicion y retorna un arreglo, el metodo filter es no mutable, significa que no cambia el valor original del arreglo
+    some():
+    join(), split()
 2. Objetos
 - Agrupacion de informacion de un mismo elemento
 } */
@@ -162,21 +167,22 @@ for (let index = 0; index < 5; index++){
         }
 } */
 
-let nombres = [];
-nombres.push("Jaime");
-nombres.push("Luisa");
-nombres.push("Camila");
 
-console.log(nombres);
+   
 
-nombres.unshift("Camilo");
-nombres.unshift("Karen");
-console.log(nombres);
-nombres.pop()
-console.log(nombres);
 
-let numeros = [1,2,3,4,5,6,7,8,9];
-numeros.splice(0,2);
+   let nombres3 = ["Luisa", "Camila", "Ana", "Luisa", "Miguel", "Adriana", "Andrea", "Felipe", "Camilo", "Ana"];
+   let nuevoNombre = nombres3.find((nombres3)=>{
+    if (nombres3 == "Ana"){
+        return nombres3
+    }
+   })
+   console.log(nombres3);
+   console.log(nuevoNombre);
+
+
+/* numeros.splice(0,2);
 console.log(numeros);
 numeros.splice(3,1);
-console.log(numeros);
+console.log(numeros); */
+
